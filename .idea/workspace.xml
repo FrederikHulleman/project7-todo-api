@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="752d435f-bb5d-4d19-8af5-5d38c9bcc3c0" name="Default Changelist" comment="" />
+    <list default="true" id="752d435f-bb5d-4d19-8af5-5d38c9bcc3c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project7-todo-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project7-todo-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +26,6 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/pimple/pimple" />
       <path value="$PROJECT_DIR$/vendor/slim/slim" />
-      <path value="$PROJECT_DIR$/vendor/container-interop/container-interop" />
       <path value="$PROJECT_DIR$/vendor/slim/php-view" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
@@ -64,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580848961661</updated>
       <workItem from="1580848962912" duration="480000" />
-      <workItem from="1580849526402" duration="247000" />
+      <workItem from="1580849526402" duration="486000" />
     </task>
     <servers />
   </component>
