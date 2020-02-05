@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="752d435f-bb5d-4d19-8af5-5d38c9bcc3c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Exception/ApiException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Subtask.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Task.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dependencies.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/dependencies.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todo.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/todo.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580848961661</updated>
       <workItem from="1580848962912" duration="480000" />
-      <workItem from="1580849526402" duration="1661000" />
+      <workItem from="1580849526402" duration="2357000" />
     </task>
     <servers />
   </component>
