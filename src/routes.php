@@ -49,7 +49,7 @@ $app->group('/api/v1/todos',function() use($app) {
     });
     $app->post('', function (Request $request, Response $response, array $args) {
         $data = $request->getParsedBody();
-        if(empty($data['title']) || empty($data['url'])) {
+        if(empty($data['task']) || empty($data['status'])) {
             throw new ApiException(ApiException::TASK_INFO_REQUIRED);
         }
         $result = $this->task->create($data);
@@ -60,7 +60,7 @@ $app->group('/api/v1/todos',function() use($app) {
     });
     $app->put('/{task_id}', function (Request $request, Response $response, array $args) {
         $data = $request->getParsedBody();
-        if(empty($args['task_id']) || empty($data['title']) || empty($data['url'])) {
+        if(empty($args['task_id']) || empty($data['task']) || empty($data['status'])) {
             throw new ApiException(ApiException::TASK_INFO_REQUIRED);
         }
         $result_find = $this->task->find($args['task_id']);
