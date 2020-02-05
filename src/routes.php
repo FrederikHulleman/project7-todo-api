@@ -1,10 +1,9 @@
 <?php
 // Routes
 
-$app->get('/[{name}]', function ($request, $response, $args) {
-    // Sample log message
-    $this->logger->info("Slim-Skeleton '/' route");
+//[GET] /api/v1/todos
+//[POST] /api/v1/todos
+//[GET] /api/v1/todos/{id}
+//[PUT] /api/v1/todos/{id}
+//[DELETE] /api/v1/todos/{id}
 
-    // Render index view
-    return $this->renderer->render($response, 'index.phtml', $args);
-});
