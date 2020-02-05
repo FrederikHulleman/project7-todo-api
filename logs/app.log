@@ -1,1 +1,6 @@
 [2020-02-05 20:25:27] slim-app.INFO: View task subtasks 1 | SUCCESSFUL [] {"uid":"59bf386"}
+[2020-02-05 20:55:19] slim-app.INFO: View task subtasks 1 | SUCCESSFUL [] {"uid":"df9581e"}
+[2020-02-05 20:55:23] slim-app.INFO: View task 1 subtask 1 | SUCCESSFUL [] {"uid":"11428eb"}
+[2020-02-05 20:55:29] slim-app.INFO: View task subtasks 1 | SUCCESSFUL [] {"uid":"77f8178"}
+[2020-02-05 21:00:06] slim-app.INFO: View task subtasks 3 | SUCCESSFUL [] {"uid":"431aa33"}
+[2020-02-05 21:02:41] slim-app.INFO: View task subtasks 4 | SUCCESSFUL [] {"uid":"7f48309"}

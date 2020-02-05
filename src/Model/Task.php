@@ -14,4 +14,10 @@ class Task extends Model
         return $this->hasMany('App\Model\Subtask')->orderBy('id','asc');
     }
 
+    public function delete()
+    {
+        $this->subtasks()->delete();
+        return parent::delete();
+    }
+
 }

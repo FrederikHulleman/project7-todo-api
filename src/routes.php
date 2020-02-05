@@ -41,6 +41,9 @@ $app->group('/api/v1/todos',function() use($app) {
         return $response->withJson($result,200,JSON_PRETTY_PRINT);
     });
     $app->get('/{task_id}', function (Request $request, Response $response, array $args) {
+        if(empty($args['task_id'])) {
+            throw new ApiException(ApiException::TASK_INFO_REQUIRED);
+        }
         $result = $this->task->find($args['task_id']);
         if(empty($result)) {
             throw new ApiException(ApiException::TASK_NOT_FOUND,404);
@@ -49,7 +52,7 @@ $app->group('/api/v1/todos',function() use($app) {
     });
     $app->post('', function (Request $request, Response $response, array $args) {
         $data = $request->getParsedBody();
-        if(empty($data['task']) || empty($data['status'])) {
+        if(empty($data['task']) || !isset($data['status'])) {
             throw new ApiException(ApiException::TASK_INFO_REQUIRED);
         }
         $result = $this->task->create($data);
@@ -60,7 +63,7 @@ $app->group('/api/v1/todos',function() use($app) {
     });
     $app->put('/{task_id}', function (Request $request, Response $response, array $args) {
         $data = $request->getParsedBody();
-        if(empty($args['task_id']) || empty($data['task']) || empty($data['status'])) {
+        if(empty($args['task_id']) || empty($data['task']) || !isset($data['status'])) {
             throw new ApiException(ApiException::TASK_INFO_REQUIRED);
         }
         $result_find = $this->task->find($args['task_id']);
@@ -86,9 +89,8 @@ $app->group('/api/v1/todos',function() use($app) {
         if($row_count_delete < 1) {
             throw new ApiException(ApiException::TASK_DELETE_FAILED);
         }
-        $result = ["message" => "The task was deleted"];
+        $result = ["message" => "The task & its subtasks were deleted"];
         return $response->withJson($result,201,JSON_PRETTY_PRINT);
-
     });
     $app->group('/{task_id}/subtasks', function() use ($app) {
         $app->get('', function (Request $request, Response $response, array $args) {
