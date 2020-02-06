@@ -1,18 +1,60 @@
-# Slim Framework 3 Skeleton Application
+# Learn how to build REST API's, using Slim, Eloquent, SQLite & Postman 
+### PHP Team Treehouse TechDegree project #7
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 3 application. This application uses the latest Slim 3 with the PHP-View template renderer. It also uses the Monolog logger.
+- [The goal of this project](#the-goal-of-this-project)
+- [Installation instructions](#installation-instructions)
+- [Tech used](#tech-used)
+- [Folder & file structure](#folder--file-structure)
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
+## The goal of this project
+#### To build a REST API to manage a To Do list, with tasks and subtasks 
 
-## Install the Application
+The following endpoints should be available: 
+* [GET] /api/v1/todos
+* [POST] /api/v1/todos
+* [GET] /api/v1/todos/{task_id}
+* [PUT] /api/v1/todos/{task_id}
+* [DELETE] /api/v1/todos/{task_id}
+* [GET] /api/v1/todos/{task_id}/subtasks
+* [POST] /api/v1/todos/{task_id}/subtasks
+* [GET] /api/v1/todos/{task_id}/subtasks/{subtask_id}
+* [PUT] /api/v1/todos/{task_id}/subtasks/{subtask_id}
+* [DELETE] /api/v1/todos/{task_id}/subtasks/{subtask_id}
 
-Run this command from the directory in which you want to install your new Slim Framework application.
+## Installation instructions
+#### - Git clone https://github.com/FrederikHulleman/project7-todo-api.git 
 
-    php composer.phar create-project slim/slim-skeleton [my-app-name]
+#### - Place the repo in a web server of your choice (XAMPP for Windows, MAMP for Mac)
 
-Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
+#### - After downloading this project, make sure you run the following composer command in the project folder to install the right packages on dev:
+```bash
+composer install
+```
 
-* Point your virtual host document root to your new application's `public/` directory.
-* Ensure `logs/` is web writeable.
+#### - Then make sure composer autoloads all classes automatically by running this command:
 
-That's it! Now go build something cool.
+```bash
+composer dump-autoload -o
+```
+
+#### - Open postman and test the endpoints.
+
+#### - And you're ready to go!  
+
+## Tech used
+#### In this project the following main concepts, languages, frameworks, packages and other technologies are applied:
+PHP | OOP | MVC | REST API | Postman | SQLite | Slim 3.0 framework | Eloquent ORM
+
+## Folder & file structure
+#### The most important folders & files within this project:
+
+    .
+    ├── log                         # contains all log details  
+    │   └── app.log                 
+    ├── public                      # contains css files, images, htaccess and index.php files  
+    │   ├── css
+    │   └── img
+    ├── src                         # contains the database file & the primary Slim files  
+    │   ├── Classes                 # contains the Post, Comment & Tag class files, based on Eloquent ORM  
+    │   └── routes                  # contains the post, comment & tag route files  
+    └── templates                   # contains all twig templates
