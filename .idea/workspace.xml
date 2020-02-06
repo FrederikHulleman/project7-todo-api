@@ -4,7 +4,6 @@
     <list default="true" id="752d435f-bb5d-4d19-8af5-5d38c9bcc3c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Task.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/todo.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/todo.db" afterDir="false" />
     </list>
@@ -81,11 +80,17 @@
       <option name="presentableId" value="Default" />
       <updated>1580848961661</updated>
       <workItem from="1580848962912" duration="480000" />
-      <workItem from="1580849526402" duration="4626000" />
+      <workItem from="1580849526402" duration="9481000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="115" key="#Composer" timestamp="1580981210930">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Composer/0.0.1440.900@0.0.1440.900" timestamp="1580981210930" />
   </component>
 </project>
