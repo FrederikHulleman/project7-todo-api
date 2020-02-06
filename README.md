@@ -48,13 +48,10 @@ PHP | OOP | MVC | REST API | Postman | SQLite | Slim 3.0 framework | Eloquent OR
 ## Folder & file structure
 #### The most important folders & files within this project:
 
-    .
-    ├── log                         # contains all log details  
-    │   └── app.log                 
-    ├── public                      # contains css files, images, htaccess and index.php files  
-    │   ├── css
-    │   └── img
-    ├── src                         # contains the database file & the primary Slim files  
-    │   ├── Classes                 # contains the Post, Comment & Tag class files, based on Eloquent ORM  
-    │   └── routes                  # contains the post, comment & tag route files  
-    └── templates                   # contains all twig templates
+    .             
+    ├── public                      # contains htaccess and index.php files  
+    └── src                         # contains the database file & the primary Slim files  
+        ├── Exception               # contains the ApiException class 
+        ├── Model                   # contains the Post, Comment & Tag class files, based on Eloquent ORM  
+        └── root                    # contains the Database and main slim files: dependencies, middleware, routes & settings
+ 
